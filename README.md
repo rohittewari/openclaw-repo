@@ -1,37 +1,69 @@
-# openclaw-repo
+# Weather App Sprint-1 Scaffold
 
-## Spring Boot Overview
+Minimal full-stack weather app using:
+- **Backend:** Spring Boot (Java 17)
+- **Frontend:** React + Vite
+- **Weather Source:** Open-Meteo APIs (no API key required)
 
-Spring Boot is a framework built on top of Spring that makes it easy to create production-ready Java applications quickly.
+## Project Structure
 
-### Why Spring Boot?
-- **Fast setup** with starter dependencies.
-- **Auto-configuration** reduces boilerplate.
-- **Embedded servers** (Tomcat/Jetty/Undertow) let you run apps directly.
-- **Production-ready features** like health checks, metrics, and externalized configuration.
+- `backend/` Spring Boot REST API
+- `frontend/` React UI
 
-### Typical Project Structure
-- `controller` — REST API endpoints
-- `service` — business logic
-- `repository` — database access layer
-- `model/entity` — domain objects
-- `resources/application.yml` — environment configuration
+---
 
-### Common Dependencies
-- `spring-boot-starter-web`
-- `spring-boot-starter-data-jpa`
-- `spring-boot-starter-security`
-- `spring-boot-starter-test`
+## Backend (Spring Boot)
 
-### Run the Application
-```bash
-./mvnw spring-boot:run
+### Endpoints
+
+- `GET /api/weather/city?city=London`
+- `GET /api/weather/coordinates?lat=40.7128&lon=-74.0060`
+
+Response shape:
+
+```json
+{
+  "locationName": "London",
+  "latitude": 51.5,
+  "longitude": -0.12,
+  "temperatureC": 11.4,
+  "windSpeedKph": 7.2,
+  "weatherCode": 3,
+  "timestamp": "2026-02-16T18:15"
+}
 ```
 
-### Build a JAR
+### Run backend
+
 ```bash
-./mvnw clean package
-java -jar target/<app-name>.jar
+cd backend
+mvn spring-boot:run
 ```
 
-Spring Boot is ideal for building scalable microservices and RESTful APIs with clean architecture and rapid development speed.
+Backend runs on `http://localhost:8080`.
+
+---
+
+## Frontend (React)
+
+UI includes:
+- City input + **Get by City** button
+- **Use Current Location** button (browser geolocation)
+- Weather result card
+
+### Run frontend
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Frontend runs on `http://localhost:5173` and calls backend on port `8080`.
+
+---
+
+## Notes
+
+- CORS is enabled in backend for `http://localhost:5173`.
+- Open-Meteo geocoding is used for city lookup and forecast API for current weather.
