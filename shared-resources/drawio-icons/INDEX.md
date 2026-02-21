@@ -2,3 +2,6 @@
 
 - drawio-icons.drawio
 
+- arrows.drawio
+- flowchart.drawio
+
