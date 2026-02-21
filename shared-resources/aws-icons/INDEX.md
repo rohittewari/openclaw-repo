@@ -22,3 +22,5 @@ Seed files shared across skills.
 - containers.drawio
 - customers.drawio
 
+- compute.drawio
+
