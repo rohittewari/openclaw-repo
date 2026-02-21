@@ -25,9 +25,15 @@ Always ask if not specified:
 - "Use architecture-diagram-designer with Azure icons."
 - "Generate draft only, then wait for my approval before finalizing diagrams."
 
-Use shared icon seed files from:
-- `shared-resources/aws-icons/`
+Use shared icon resources from:
+- `shared-resources/aws-icons/` (primary for AWS diagrams)
+- `shared-resources/drawio-icons/` (native draw.io helpers: arrows/flowchart/common)
 - `shared-resources/azure-icons/` (when available)
+
+Icon usage policy:
+1) If diagram mode is AWS, prioritize icons from `shared-resources/aws-icons/`.
+2) Use `shared-resources/drawio-icons/` only where appropriate (generic connectors, flow helpers, non-cloud symbols).
+3) Keep icon style consistent within a diagram.
 
 ## Process
 1) Parse requirement/HLD/LLD

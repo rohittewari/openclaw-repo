@@ -39,4 +39,9 @@ Write under a project folder:
 - HLD.md
 - LLD.md
 
+## Diagram handoff note
+When the user asks to continue with diagrams after docs approval, hand off to `architecture-diagram-designer`.
+- Prefer cloud-specific icon packs first (AWS/Azure as selected).
+- Use `shared-resources/drawio-icons/` only for generic draw.io helpers where needed.
+
 Use concise, implementation-ready language with assumptions + open questions sections.
