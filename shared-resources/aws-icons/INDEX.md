@@ -13,7 +13,7 @@ Seed files shared across skills.
 - storage.drawio
 - security.drawio
 - networking.drawio
-- group.drawio
+- groups.drawio
 
 ## Planned next category files
 - observability.drawio
