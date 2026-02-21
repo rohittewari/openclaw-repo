@@ -1,0 +1,69 @@
+<mxfile host="app.diagrams.net" modified="2026-02-21T17:20:00.000Z" agent="openclaw" version="24.7.17" editor="draw.io">
+  <diagram id="aws-template" name="AWS Architecture Template">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1080" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <mxCell id="title" value="AWS Architecture Template (replace placeholders with official AWS icons in draw.io)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="900" height="30" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="internet" value="Internet / Users" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="60" y="140" width="180" height="70" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="route53" value="Route 53" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="300" y="140" width="130" height="70" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="cloudfront" value="CloudFront" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="480" y="140" width="140" height="70" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="waf" value="WAF" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="670" y="140" width="100" height="70" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="alb" value="ALB" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="820" y="140" width="110" height="70" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="eks" value="EKS / ECS Service" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="980" y="120" width="180" height="110" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="rds" value="RDS (PostgreSQL)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="980" y="280" width="180" height="70" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="redis" value="ElastiCache (Redis)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="980" y="380" width="180" height="70" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="s3" value="S3" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="980" y="480" width="180" height="70" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="cw" value="CloudWatch / X-Ray" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1260" y="180" width="180" height="80" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="sm" value="Secrets Manager / KMS" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="1260" y="300" width="200" height="80" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="e1" style="endArrow=block;html=1;" edge="1" parent="1" source="internet" target="route53"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e2" style="endArrow=block;html=1;" edge="1" parent="1" source="route53" target="cloudfront"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e3" style="endArrow=block;html=1;" edge="1" parent="1" source="cloudfront" target="waf"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e4" style="endArrow=block;html=1;" edge="1" parent="1" source="waf" target="alb"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e5" style="endArrow=block;html=1;" edge="1" parent="1" source="alb" target="eks"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e6" value="read/write" style="endArrow=block;html=1;" edge="1" parent="1" source="eks" target="rds"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e7" value="cache" style="endArrow=block;html=1;" edge="1" parent="1" source="eks" target="redis"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e8" value="objects" style="endArrow=block;html=1;" edge="1" parent="1" source="eks" target="s3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e9" value="metrics/logs/traces" style="dashed=1;endArrow=open;html=1;" edge="1" parent="1" source="eks" target="cw"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e10" value="secrets/keys" style="dashed=1;endArrow=open;html=1;" edge="1" parent="1" source="eks" target="sm"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -19,7 +19,7 @@ Reusable kit to generate professional software architecture documentation and di
 - `prompts/` → AI prompt inputs
 - `templates/` → markdown templates
 - `standards/` → diagram and quality standards
-- `examples/` → starter examples
+- `examples/` → starter examples (including AWS draw.io template)
 
 ## Naming Convention
 - Docs: `BRD_v1.md`, `TRD_v1.md`, `HLD_v1.md`, `LLD_v1.md`
