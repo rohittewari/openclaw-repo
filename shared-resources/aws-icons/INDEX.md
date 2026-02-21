@@ -10,6 +10,10 @@ Seed files shared across skills.
 - serverless.drawio
 - streaming.drawio
 - analytics.drawio
+- storage.drawio
+- security.drawio
+- networking.drawio
+- group.drawio
 
 ## Planned next category files
 - observability.drawio
