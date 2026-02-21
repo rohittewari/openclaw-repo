@@ -20,5 +20,5 @@ Seed files shared across skills.
 ## Planned next category files
 - observability.drawio
 - containers.drawio
-- compute.drawio
+- customers.drawio
 
