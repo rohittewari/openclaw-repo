@@ -12,6 +12,4 @@ Seed files shared across skills.
 - analytics.drawio
 
 ## Planned next category files
-- security.drawio
 - observability.drawio
-- networking.drawio
