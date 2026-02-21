@@ -18,6 +18,11 @@ Create docs in this order unless the user asks otherwise:
 - Gate 2 (optional): ask for approval after HLD before creating LLD.
 - If user says "approval after every document", pause after each document.
 
+### Runtime override examples
+- "Use requirements-doc-suite with approval after every document."
+- "Run requirements-doc-suite with Gate 2 off."
+- "Run requirements-doc-suite and pause only at Gate 1 and Gate 2."
+
 ## Inputs to collect
 - Business goal and success metrics
 - Users/stakeholders

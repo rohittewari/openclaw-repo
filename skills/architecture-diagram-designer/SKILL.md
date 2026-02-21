@@ -20,6 +20,11 @@ Always ask if not specified:
 - Azure
 (Default: AWS)
 
+### Runtime override examples
+- "Use architecture-diagram-designer with AWS icons."
+- "Use architecture-diagram-designer with Azure icons."
+- "Generate draft only, then wait for my approval before finalizing diagrams."
+
 Use shared icon seed files from:
 - `shared-resources/aws-icons/`
 - `shared-resources/azure-icons/` (when available)
