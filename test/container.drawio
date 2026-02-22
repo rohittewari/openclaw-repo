@@ -1,1 +1,55 @@
-<mxfile host="app.diagrams.net" modified="2026-02-22T00:00:00.000Z" agent="openclaw" version="24.7.17" editor="draw.io"><diagram id="container" name="container"><mxGraphModel dx="1400" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1080"><root><mxCell id="0"/><mxCell id="1" parent="0"/><mxCell id="s3r" value="S3 Raw" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.storage;fillColor=#C925D1;strokeColor=none;" vertex="1" parent="1"><mxGeometry x="140" y="180" width="70" height="70" as="geometry"/></mxCell><mxCell id="k" value="Kinesis" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.kinesis;fillColor=#8C4FFF;strokeColor=none;" vertex="1" parent="1"><mxGeometry x="280" y="180" width="70" height="70" as="geometry"/></mxCell><mxCell id="f" value="Firehose" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.kinesis_data_firehose;fillColor=#8C4FFF;strokeColor=none;" vertex="1" parent="1"><mxGeometry x="390" y="180" width="70" height="70" as="geometry"/></mxCell><mxCell id="g" value="Glue ETL" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.glue_data_catalog;fillColor=#8C4FFF;strokeColor=none;" vertex="1" parent="1"><mxGeometry x="530" y="180" width="70" height="70" as="geometry"/></mxCell><mxCell id="s3c" value="S3 Curated" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.storage;fillColor=#C925D1;strokeColor=none;" vertex="1" parent="1"><mxGeometry x="670" y="180" width="70" height="70" as="geometry"/></mxCell><mxCell id="a" value="Athena" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.athena;fillColor=#8C4FFF;strokeColor=none;" vertex="1" parent="1"><mxGeometry x="810" y="180" width="70" height="70" as="geometry"/></mxCell><mxCell id="q" value="QuickSight" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.analytics;fillColor=#8C4FFF;strokeColor=none;" vertex="1" parent="1"><mxGeometry x="950" y="180" width="70" height="70" as="geometry"/></mxCell><mxCell id="cw" value="CloudWatch" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.management_governance;fillColor=#759C3E;strokeColor=none;" vertex="1" parent="1"><mxGeometry x="530" y="320" width="70" height="70" as="geometry"/></mxCell><mxCell id="iam" value="IAM/KMS" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.security_identity_compliance;fillColor=#DD344C;strokeColor=none;" vertex="1" parent="1"><mxGeometry x="670" y="320" width="70" height="70" as="geometry"/></mxCell><mxCell id="e1" style="endArrow=block;html=1;" edge="1" parent="1" source="k" target="f"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="e2" style="endArrow=block;html=1;" edge="1" parent="1" source="f" target="s3r"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="e3" style="endArrow=block;html=1;" edge="1" parent="1" source="s3r" target="g"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="e4" style="endArrow=block;html=1;" edge="1" parent="1" source="g" target="s3c"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="e5" style="endArrow=block;html=1;" edge="1" parent="1" source="s3c" target="a"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="e6" style="endArrow=block;html=1;" edge="1" parent="1" source="a" target="q"><mxGeometry relative="1" as="geometry"/></mxCell></root></mxGraphModel></diagram></mxfile>
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="29.5.1">
+  <diagram id="container" name="container">
+    <mxGraphModel dx="1281" dy="527" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1080" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="s3r" parent="1" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.storage;fillColor=#C925D1;strokeColor=none;" value="S3 Raw" vertex="1">
+          <mxGeometry height="70" width="70" x="140" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="k" parent="1" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.kinesis;fillColor=#8C4FFF;strokeColor=none;" value="Kinesis" vertex="1">
+          <mxGeometry height="70" width="70" x="280" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="f" parent="1" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.kinesis_data_firehose;fillColor=#8C4FFF;strokeColor=none;" value="Firehose" vertex="1">
+          <mxGeometry height="70" width="70" x="390" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="g" parent="1" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.glue_data_catalog;fillColor=#8C4FFF;strokeColor=none;" value="Glue ETL" vertex="1">
+          <mxGeometry height="70" width="70" x="530" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="s3c" parent="1" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.storage;fillColor=#C925D1;strokeColor=none;" value="S3 Curated" vertex="1">
+          <mxGeometry height="70" width="70" x="670" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="a" parent="1" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.athena;fillColor=#8C4FFF;strokeColor=none;" value="Athena" vertex="1">
+          <mxGeometry height="70" width="70" x="810" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="q" parent="1" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.analytics;fillColor=#8C4FFF;strokeColor=none;" value="QuickSight" vertex="1">
+          <mxGeometry height="70" width="70" x="950" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="cw" parent="1" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.management_governance;fillColor=#759C3E;strokeColor=none;" value="CloudWatch" vertex="1">
+          <mxGeometry height="70" width="70" x="530" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="iam" parent="1" style="shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.security_identity_compliance;fillColor=#DD344C;strokeColor=none;" value="IAM/KMS" vertex="1">
+          <mxGeometry height="70" width="70" x="670" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="k" style="endArrow=block;html=1;" target="f">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="f" style="endArrow=block;html=1;" target="s3r">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="s3r" style="endArrow=block;html=1;" target="g">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="g" style="endArrow=block;html=1;" target="s3c">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="s3c" style="endArrow=block;html=1;" target="a">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="a" style="endArrow=block;html=1;" target="q">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

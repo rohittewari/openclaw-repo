@@ -10,7 +10,7 @@ Seed files shared across skills.
 - serverless.drawio
 - streaming.drawio
 - analytics.drawio
-- storage.drawio
+- storages.drawio
 - security.drawio
 - networking.drawio
 - groups.drawio
