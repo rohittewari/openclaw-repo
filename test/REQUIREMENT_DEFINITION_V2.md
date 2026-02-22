@@ -1,4 +1,4 @@
-# Requirement Definition
+# Requirement Definition (V2)
 
 ## Goal
 Build an AWS-based data ingestion and analytics platform for multi-format data (CSV, Parquet, text, logs/events).
@@ -22,4 +22,5 @@ Build an AWS-based data ingestion and analytics platform for multi-format data (
 - AWS-first
 - Cost-conscious managed services
 
-Approval: Approved
+## Approval
+Pending

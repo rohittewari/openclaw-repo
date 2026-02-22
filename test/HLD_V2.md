@@ -1,4 +1,4 @@
-# HLD
+# HLD (V2)
 
 ## Layers
 - Ingestion: S3/API/Lambda, Kinesis/Firehose
@@ -6,7 +6,7 @@
 - Storage: S3 Raw + Curated
 - Metadata: Glue Catalog
 - Analytics: Athena + QuickSight
-- Ops/Security: CloudWatch, CloudTrail, IAM, KMS
+- Ops/Sec: CloudWatch, CloudTrail, IAM, KMS
 
 ## Core Flow
 Sources -> Ingestion -> Raw S3 -> Glue -> Curated S3 -> Athena -> QuickSight
